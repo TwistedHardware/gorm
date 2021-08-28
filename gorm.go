@@ -45,6 +45,8 @@ type Config struct {
 	QueryFields bool
 	// CreateBatchSize default create batch size
 	CreateBatchSize int
+	// Ignore unknown relations will not give an error in an relation is unknown
+	IgnoreUnknownRelations bool
 
 	// ClauseBuilders clause builder
 	ClauseBuilders map[string]clause.ClauseBuilder
